@@ -5,9 +5,9 @@ jasypt:
 # redis 相关
 spring:
   redis:
-    password: whxx123.
-    host: pigx-redis
-
+    password: root@1q2w3e
+    host: 118.24.129.122
+    database: 7
 # 暴露监控端点
 management:
   endpoints:
