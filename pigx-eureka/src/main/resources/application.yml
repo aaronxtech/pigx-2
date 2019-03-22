@@ -5,9 +5,10 @@ spring:
   security:
     user:
       name: pig
-      password: pig
+      password: pig!!11
   application:
-    name: @artifactId@
+#    name: @artifactId@
+    name: pigx-eureka
   cloud:
     config:
       enabled: false
@@ -15,13 +16,13 @@ spring:
 # 类似的 redis 使用pigx-redis ,gateway 换成 pigx-gateway
 eureka:
   instance:
-    hostname: pigx-eureka
+    hostname: www.itourshare.net
     prefer-ip-address: true
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://pig:pig@${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://pig:pig!!11@${eureka.instance.hostname}:${server.port}/eureka/
   server:
     eviction-interval-timer-in-ms: 4000
     enable-self-preservation: false
